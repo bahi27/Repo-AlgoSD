@@ -1,0 +1,14 @@
+function count_primes(n):
+    count = 0
+    for i from 2 to n - 1:
+        if is_prime(i):
+            count = count + 1
+    return count
+
+function is_prime(num):
+    if num <= 1:
+        return false
+    for i from 2 to num - 1:
+        if num % i == 0:
+            return false
+    return true
